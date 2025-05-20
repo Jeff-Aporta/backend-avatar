@@ -11,7 +11,7 @@ app.set("port", process.env.PORT || 3001);
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const buildPath = path.join(__dirname, 'frontend', 'build');
+const buildPath = path.join(__dirname, 'avatar-build');
 
 // 2. Servir los archivos estáticos de React
 app.use(express.static(buildPath));
